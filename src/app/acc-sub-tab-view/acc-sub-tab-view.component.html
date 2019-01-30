@@ -1,0 +1,35 @@
+<div class="accSubTabViewComp">
+  <div class="astv-wrap">
+	<div class="astv-container" *ngFor="let acc of listAccordion; let id= index" [attr.data-isopen]="acc.isOpen">
+	  <div class="astv-head" (click)=showAccordion(id,acc.isOpen)>
+        <ng-container *ngIf="!acc.isOpen">
+            <h4 class="astv-mainInfo">
+              {{acc.title}}
+            </h4>
+            <div class="astv-moreInfo">
+              <h2>
+                {{acc.titleContent.members}}
+              </h2>
+              <h2>
+                {{acc.titleContent.percentage}}
+              </h2>
+              <h2>
+                {{acc.titleContent.cleared}}
+              </h2>
+              <h2>
+                {{acc.titleContent.cgpa}}
+              </h2>
+            </div>
+        </ng-container>
+        <ng-container *ngIf="acc.isOpen">
+            <h2 class="astv-mainInfo">
+                {{acc.title}}
+            </h2>
+        </ng-container>
+		<span class="text-right">{{(acc.isOpen?'-':'+')}}</span>
+	  </div>
+	  <div class="astv-headContext" [innerHtml]="acc.content">
+	  </div>
+	</div>
+  </div>
+</div>

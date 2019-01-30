@@ -1,0 +1,33 @@
+.basicAccordionComp {
+  padding: 0px 30px;
+}
+.basicAccordionComp .bac-container {
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+
+}
+.basicAccordionComp .bac-container[data-isopen='false'] {
+    height: 69px;
+    max-height: 99px;
+    overflow: hidden;
+}
+
+.basicAccordionComp .bac-container .bac-head {
+    background: #ddd;
+    padding: 1px 20px;
+    cursor: pointer;
+}
+.basicAccordionComp .bac-container .bac-head .text-right{
+    float: right;
+    background: #fff;
+    padding: 1px 10px;
+    margin: 0;
+}
+.basicAccordionComp .bac-container[data-isopen='true'] .bac-head {
+    background: #6ed078;
+}
+
+
+.basicAccordionComp .bac-container .bac-headContext {
+  padding: 0 20px;
+}

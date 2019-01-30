@@ -1,0 +1,14 @@
+<div class="basicAccordionComp">
+  	<div class="bac-wrap">
+    	<div class="bac-container" *ngFor="let acc of listAccordion; let id= index" [attr.data-isopen]="acc.isOpen">
+      		<div class="bac-head" (click)=showAccordion(id,acc.isOpen)>
+        		<h2>
+					{{acc.title}}
+					<span class="text-right">{{(acc.isOpen?'-':'+')}}</span>
+				</h2>
+			</div>
+      		<div class="bac-headContext" [innerHtml]="acc.content">
+      		</div>
+    	</div>
+  	</div>
+</div>
