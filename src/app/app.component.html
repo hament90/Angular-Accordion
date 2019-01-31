@@ -8,27 +8,25 @@
 <h2>Here are some Accordion view created: </h2>
 <ul>
   <li>
-    <h2><button (click)="checkView('basic');">Basic View</button></h2>
+<h2><button class="accordion-buttons" [ngClass]="{'active':showView==='basic'}" (click)="checkView('basic');">Basic
+    View</button></h2>
   </li>
 <li>
-<h2><button (click)="checkView('astv');">Accordion Sub Tab View </button></h2>
+<h2><button class="accordion-buttons" [ngClass]="{'active':showView==='astv'}" (click)="checkView('astv');">Accordion
+    Sub Tab View </button></h2>
 </li>
 
 <li>
-  <h2><button (click)="checkView('aav');">Animated Accordion View </button></h2>
+<h2><button class="accordion-buttons" [ngClass]="{'active':showView==='aav'}" (click)="checkView('aav');">Animated
+    Accordion View </button></h2>
 </li>
 <li>
-  <h2><button (click)="checkView('aav');">Animated Accordion View </button></h2>
-</li>
-<li>
-  <h2><button (click)="checkView('aav');">Animated Accordion View </button></h2>
-</li>
-<li>
-  <h2><button (click)="checkView('tav');">Tabbed Accordion View </button></h2>
+<h2><button class="accordion-buttons" [ngClass]="{'active':showView==='tav'}" (click)="checkView('tav');">Tabbed
+    Accordion View </button></h2>
 </li>
   
 </ul>
 
-<app-basic-view *ngIf="showView==='astv'"></app-basic-view>
+<app-basic-view *ngIf="showView==='basic'"></app-basic-view>
 
-<app-acc-sub-tab-view *ngIf="showView==='basic'"></app-acc-sub-tab-view>
+<app-acc-sub-tab-view *ngIf="showView==='astv'"></app-acc-sub-tab-view>

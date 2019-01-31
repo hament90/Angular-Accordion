@@ -7,14 +7,14 @@
 
 }
 .basicAccordionComp .bac-container[data-isopen='false'] {
-    height: 69px;
+    height: 65px;
     max-height: 99px;
     overflow: hidden;
 }
 
 .basicAccordionComp .bac-container .bac-head {
     background: #ddd;
-    padding: 1px 20px;
+    padding:  20px;
     cursor: pointer;
 }
 .basicAccordionComp .bac-container .bac-head .text-right{
@@ -29,5 +29,5 @@
 
 
 .basicAccordionComp .bac-container .bac-headContext {
-  padding: 0 20px;
+  padding: 15px 20px;
 }

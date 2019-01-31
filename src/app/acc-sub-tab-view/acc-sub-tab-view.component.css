@@ -1,0 +1,86 @@
+.accSubTabViewComp{
+    margin: 0 30px;
+}
+.accSubTabViewComp .astv-container{
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+.accSubTabViewComp .astv-container .text-right{
+    float:right;
+    color:#fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+.accSubTabViewComp .astv-container[data-isopen=false] .text-right {
+    color: #171515;
+}
+.accSubTabViewComp .astv-container[data-isopen=false] {
+  height: 80px;
+  overflow: hidden;
+}
+.accSubTabViewComp .astv-container[data-isopen=true] h2.astv-mainInfo{
+    padding: 15px 30px;
+    background: #3be083;
+    color: #171515;
+}
+.accSubTabViewComp .astv-container[data-isopen=false] .astv-head {
+    background: #d4d4d4;
+    padding: 15px 30px;
+}
+.accSubTabViewComp .astv-container[data-isopen=false] .astv-head > *{
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+}
+.accSubTabViewComp .astv-container[data-isopen=false] .astv-head div.astv-moreInfo{
+    width:70%;
+}
+.accSubTabViewComp .astv-container[data-isopen=false] .astv-head div.astv-moreInfo h2{
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+  margin-right:25px;
+  text-align: center;
+}
+.accSubTabViewComp .astv-container[data-isopen=false] .astv-head div.astv-moreInfo h2 span.astv-labelled {
+    font-size: 10px;
+    color: #505050;
+    width: 100%;
+    text-align: left;
+}
+.accSubTabViewComp .astv-container[data-isopen=false] .astv-head div.astv-moreInfo h2 span.astv-headed {
+    margin-top: -10px;
+}
+.accSubTabViewComp .astv-container[data-isopen=false] .astv-head .astv-moreInfo h2>*
+ {
+  display: inline-block;
+  vertical-align: top;
+}
+.accSubTabViewComp .astv-container .astv-headContext{
+    padding: 30px;
+    background: #eee;
+    
+}
+.accSubTabViewComp .astv-container .astv-headContext .astv-tabbed_wrap{
+    margin-bottom: 30px;
+}
+.accSubTabViewComp .astv-container .astv-headContext .astv-tabbed_wrap .astv-marketDef h3{
+    font-size: 16px;
+    color:#5f5f5f;
+    margin-bottom:8px;
+}
+.accSubTabViewComp .astv-container .astv-headContext .astv-tabbed_wrap .astv-marketDef h2{
+    background: #fff;
+    color:#a7a1f8;
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+    margin-right: 20px;
+}
+.accSubTabViewComp .astv-container .astv-headContext .astv-tabbed_wrap .astv-marketDef>*{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.accSubTabViewComp .astv-container .astv-headContext .astv-tabbed_wrap .astv-marketDesc {
+    padding: 15px;
+    background: #fff;
+}
