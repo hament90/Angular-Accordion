@@ -1,9 +1,9 @@
 li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 li .accordion-buttons{
-    padding: 10px 15px;
+    padding: 10px ;
     box-shadow: 0 0 0;
     background: #c7c7c7;
     border: 0;

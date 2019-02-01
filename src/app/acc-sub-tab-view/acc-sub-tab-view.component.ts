@@ -127,7 +127,9 @@ export class AccSubTabViewComponent implements OnInit {
     }
 
     showAccordion(index, isOpen: Boolean) {
-        this.listAccordion.filter((item) => { if (item.isOpen === true) { item.isOpen = !item.isOpen; } });
+        if(!isOpen){
+            this.listAccordion.filter((item) => { if (item.isOpen === true) { item.isOpen = !item.isOpen; } });
+        }
         this.listAccordion[index].isOpen = !this.listAccordion[index].isOpen;
     }
 
